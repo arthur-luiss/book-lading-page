@@ -1,4 +1,4 @@
-// ── SCROLL REVEAL ──
+// - SCROLL REVEAL -
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
@@ -10,7 +10,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 reveals.forEach(el => observer.observe(el));
  
-// ── FORM SUBMIT ──
+// - FORM SUBMIT -
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target.querySelector('button[type="submit"]');
@@ -23,7 +23,7 @@ function handleSubmit(e) {
   }, 3000);
 }
  
-// ── HEADER SHADOW ON SCROLL ──
+// - HEADER SHADOW ON SCROLL -
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   header.style.boxShadow = window.scrollY > 20
